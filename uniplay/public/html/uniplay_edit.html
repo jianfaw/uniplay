@@ -1,0 +1,31 @@
+<div class="wrapper-comp-settings editor-with-buttons is-active" id="settings-tab">
+    <ul class="list-input settings-list">
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="display_name">视频名称</label>
+                <input class="input setting-input" id="display_name" value="{{ display_name }}" type="text">
+            </div>
+            <span class="tip setting-help">填写视频名称</span>
+        </li>
+
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="play_url">视频play_url</label>
+                <input class="input setting-input" id="play_url" value="{{ play_url }}" type="text">
+            </div>
+            <span class="tip setting-help">填写视频play_url，将视频分享中的“html代码”复制到此处，例如<br>
+            &lt;embed src="http://player.youku.com/player.php/sid/XMTQ0MDIwMDEwNA==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"&gt;&lt;/embed&gt;</span>
+        </li>
+    </ul>
+
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+                <a href="javascript:void(0)" class="button action-primary action-save">Save</a>
+            </li>
+            <li class="action-item">
+                <a href="javascript:void(0)" class="button action-cancel">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</div>

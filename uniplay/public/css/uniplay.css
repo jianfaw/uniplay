@@ -1,0 +1,9 @@
+/* CSS for UniPlayerXBlock */
+
+.uniplay_block .count {
+    font-weight: bold;
+}
+
+.uniplay_block p {
+    cursor: pointer;
+}
