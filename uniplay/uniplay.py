@@ -23,7 +23,7 @@ class UniPlayerXBlock(XBlock):
     # TO-DO: delete count, and define your own fields.
     display_name = String(default='Universal Player', scope=Scope.content, help='video name')
     play_url = String(
-        default='<embed src="http://player.youku.com/player.php/sid/XMTQ0MDIwMDEwNA==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>',
+        default='<embed src="http://static.video.qq.com/TPout.swf?vid=l0019lkpy23&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>',
         scope=Scope.content, help='video link')
 
     def load_resource(self, resource_path):
