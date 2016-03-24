@@ -52,6 +52,7 @@ class UniPlayerXBlock(XBlock):
         }
         html = self.render_template("public/html/uniplay_view.html", context)
         frag = Fragment(html.format(self=self))
+        frag.add_css(self.load_resource("public/css/uniplay.css"))
         frag.add_javascript(self.load_resource("public/js/src/uniplay_view.js"))
         frag.initialize_js('uniPlayInitView')
         return frag
@@ -63,6 +64,7 @@ class UniPlayerXBlock(XBlock):
         }
         html = self.render_template("public/html/uniplay_edit.html", context)
         frag = Fragment(html)
+        frag.add_css(self.load_resource("public/css/uniplay.css"))
         frag.add_javascript(self.load_resource("public/js/src/uniplay_edit.js"))
         frag.initialize_js('uniPlayInitEdit')
         return frag

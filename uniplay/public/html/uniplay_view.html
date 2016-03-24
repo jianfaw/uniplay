@@ -1,2 +1,9 @@
-<h2>{{ display_name }}</h2>
-<div>{{ play_url|safe|escape }}</div>
+<div class="lm-header-title">
+    <div class="lm-header-display-name">{{ display_name }}</div>
+    <div class="lm-header-dev-info"></div>
+</div>
+<div>
+    <div>
+        {{ play_url|safe|escape }}
+    </div>
+</div>
