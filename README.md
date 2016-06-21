@@ -37,8 +37,8 @@ Universal Player XBlock v 1.0
   >source /edx/bin/supervisorctl restart edxapp:
 
 #### 4. courses settings
-
-  Go to Settings -> Advanced Settings and set advanced_modules to ["uniplay"].
+  
+  >Go to Settings -> Advanced Settings and set advanced_modules to ["uniplay"].
 
 ## Suggestions:
   Keep the user "edxapp" clear of the privilege "sudo", you ought to switch user to "edustack" if you need the superior 
