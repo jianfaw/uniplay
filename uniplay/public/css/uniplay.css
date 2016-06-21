@@ -25,6 +25,7 @@
 .lm-header-dev-info {
     width: 26%;
     float: right;
+    display:none;
 }
 
 .lm-header-dev-logo {
