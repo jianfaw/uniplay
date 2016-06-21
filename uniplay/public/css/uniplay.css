@@ -17,6 +17,7 @@
 .lm-header-display-name {
     float: left;
     font-size: 20px;
+    font-weight: bold;
     color: #7f7f7f;
     letter-spacing: 1px;
     text-transform: uppercase;
