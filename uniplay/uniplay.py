@@ -21,10 +21,10 @@ class UniPlayerXBlock(XBlock):
     # self.<fieldname>.
 
     # TO-DO: delete count, and define your own fields.
-    display_name = String(default='Universal Player', scope=Scope.content, help='video name')
+    display_name = String(default='视频', scope=Scope.content, help='视频名称')
     play_url = String(
-        default='<embed src="http://static.video.qq.com/TPout.swf?vid=l0019lkpy23&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>',
-        scope=Scope.content, help='video link')
+        default='<iframe height="498" width="510" src="http://59.78.181.182:8080/Playembed/237" frameborder="0" allowfullscreen></iframe>',
+        scope=Scope.content, help='视频地址')
 
     def load_resource(self, resource_path):
         """
