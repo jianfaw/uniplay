@@ -22,9 +22,8 @@ class UniPlayerXBlock(XBlock):
 
     # TO-DO: delete count, and define your own fields.
     display_name = String(default='视频', scope=Scope.content, help='视频名称')
-    play_url = String(
-        default='<iframe height="498" width="510" src="http://59.78.181.182:8080/Playembed/237" frameborder="0" allowfullscreen></iframe>',
-        scope=Scope.content, help='视频地址')
+    play_id = String(default='0', scope=Scope.content, help='视频Id')
+    play_url = String(default='<iframe height="498" width="510" src="http://59.78.181.182:8080/Playembed/237" frameborder="0" allowfullscreen></iframe>',scope=Scope.content, help='视频地址')
 
     def load_resource(self, resource_path):
         """
@@ -48,6 +47,7 @@ class UniPlayerXBlock(XBlock):
         """
         context = {
             'display_name': self.display_name,
+            'play_id':self.play_id,
             'play_url': self.play_url,
         }
         html = self.render_template("public/html/uniplay_view.html", context)
@@ -60,6 +60,7 @@ class UniPlayerXBlock(XBlock):
     def studio_view(self, context=None):
         context = {
             'display_name': self.display_name,
+            'play_id':self.play_id,
             'play_url': self.play_url,
         }
         html = self.render_template("public/html/uniplay_edit.html", context)
@@ -80,6 +81,7 @@ class UniPlayerXBlock(XBlock):
         # assert data['hello'] == 'world'
 
         self.display_name = data['display_name']
+        self.play_id = data['play_id']
         self.play_url = data['play_url']
         return {
             'result': 'success',
