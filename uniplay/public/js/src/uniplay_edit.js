@@ -10,11 +10,11 @@ function uniPlayInitEdit(runtime, element) {
     eventer(messageEvent, function (e) {
         var msg = e.data;
         if (msg != null) {
-            $("#play_id").value(e.data.id);
-            $("#play_url").value(e.data.url);
+            $("#play_id").val(e.data.id);
+            $("#play_url").val(e.data.url);
         } else {
-            $("#play_id").value("");
-            $("#play_url").value("");
+            $("#play_id").val("");
+            $("#play_url").val("");
         }
     }, false);
 

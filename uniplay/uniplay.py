@@ -23,7 +23,7 @@ class UniPlayerXBlock(XBlock):
     # TO-DO: delete count, and define your own fields.
     display_name = String(default='视频', scope=Scope.content, help='视频名称')
     play_id = String(default='0', scope=Scope.content, help='视频Id')
-    play_url = String(default='<iframe height="498" width="510" src="http://59.78.181.182:8080/Playembed/237" frameborder="0" allowfullscreen></iframe>',scope=Scope.content, help='视频地址')
+    play_url = String(default='',scope=Scope.content, help='视频地址')
 
     def load_resource(self, resource_path):
         """
